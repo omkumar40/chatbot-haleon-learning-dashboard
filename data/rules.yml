@@ -1,0 +1,59 @@
+version: "3.1"
+
+rules:
+- rule: Respond to greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Respond to goodbyes
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- rule: Answer FAQ about dashboard completion
+  steps:
+  - intent: faq_dashboard_completion
+  - action: utter_faq_dashboard_completion
+
+- rule: Answer FAQ about filtering using MUDID
+  steps:
+  - intent: faq_filter_direct_reports
+  - action: utter_faq_filter_direct_reports
+
+- rule: Answer FAQ about exporting a report
+  steps:
+  - intent: faq_export_report
+  - action: utter_faq_export_report
+
+- rule: Answer FAQ about the Required Date
+  steps:
+  - intent: faq_required_date_empty
+  - action: utter_faq_required_date_empty
+
+- rule: Answer FAQ about seeing direct reports
+  steps:
+  - intent: faq_see_direct_reports
+  - action: utter_faq_see_direct_reports
+
+- rule: Answer FAQ about monitorable trainings
+  steps:
+  - intent: faq_monitorable_trainings
+  - action: utter_faq_monitorable_trainings
+
+- rule: Answer FAQ about the dashboard being live
+  steps:
+  - intent: faq_dashboard_live
+  - action: utter_faq_dashboard_live
+
+- rule: Answer Developer details
+  steps:
+  - intent: asking_developer
+  - action: utter_asking_developer
+

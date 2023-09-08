@@ -1,0 +1,103 @@
+version: "3.1"
+
+nlu:
+- intent: asking_developer
+  examples: |
+    - What can you do?
+    - Who are you ?
+    - who made you ?
+    - who is your creator?
+    - who is your developer?
+
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey there
+    - Good day
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Farewell
+    - Have a great day
+
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thanks
+    - Thanks a lot
+    - Thanks a bunch
+    - Appreciate it
+
+- intent: faq_dashboard_completion
+  examples: |
+    - How to see who all has completed trainings under me
+    - View completed trainings under my hierarchy
+    - Check trainings completion under my management
+    - Employees' training completion status under me
+    - How to view who completed training in my team
+
+- intent: faq_difference_managers
+  examples: |
+    - What is the difference between Manager, Manager MUDID, and Line Manager
+    - Explain Manager, Manager MUDID, and Line Manager fields
+    - Difference between Manager and Line Manager
+    - Clarify Manager MUDID and Line Manager
+
+- intent: faq_filters
+  examples: |
+    - What filters can I apply?
+    - List available filters
+    - Explain filter options
+    - How to use filters in the dashboard
+
+- intent: faq_filter_direct_reports
+  examples: |
+    - Can I filter using MUDID of my direct reports?
+    - Filter by MUDID of direct reports
+    - Using MUDID to filter direct reports
+    - Filter employees by their MUDID
+
+- intent: faq_export_report
+  examples: |
+    - How can I get the report?
+    - Export training report
+    - Download training data
+    - Save report as Excel
+    - Obtain a copy of the report
+
+- intent: faq_required_date_empty
+  examples: |
+    - Why is the Required Date empty?
+    - Empty Required Date field
+    - Missing Required Date
+    - Required Date not shown
+    - Required Date is blank
+
+- intent: faq_see_direct_reports
+  examples: |
+    - How do I see only my direct reports?
+    - Viewing my direct reports
+    - Show employees reporting directly to me
+    - Filter for direct reports
+    - Display only my team members
+
+- intent: faq_monitorable_trainings
+  examples: |
+    - What trainings can we monitor using this dashboard?
+    - List of monitorable trainings
+    - Dashboard-supported courses
+    - Tracked training programs
+    - Which trainings are visible in the dashboard?
+
+- intent: faq_dashboard_live
+  examples: |
+    - Is this dashboard live?
+    - Dashboard real-time status
+    - Live data on the dashboard
+    - How up-to-date is the dashboard?
+    - Is the dashboard updated regularly?
+

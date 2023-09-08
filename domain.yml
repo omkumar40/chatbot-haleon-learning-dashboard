@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - faq_dashboard_completion
+  - faq_difference_managers
+  - faq_filters
+  - faq_filter_direct_reports
+  - faq_export_report
+  - faq_required_date_empty
+  - faq_see_direct_reports
+  - faq_monitorable_trainings
+  - faq_dashboard_live
+  - asking_developer
+
+responses:
+  utter_greet:
+    - text: Hello! How can I assist you today?
+
+  utter_goodbye:
+    - text: Goodbye! If you have more questions, feel free to ask.
+
+  utter_thanks:
+    - text: You're welcome! If you need further assistance, don't hesitate to ask.
+
+
+  utter_faq_dashboard_completion:
+    - text: To see who has completed trainings under your management, you can go to the Detailed View page, filter your name in the Manager or Manager MUDID field, and you will see the view of your employees under your hierarchy with the Course details and the status.
+
+  utter_faq_difference_managers:
+    - text: The difference between Manager, Manager MUDID, and Line Manager is as follows, If you filter your name in the Manager or Manager MUDID field, you will see all the details of learners who are under your hierarchy, including employees reporting directly to you and those who report to any of your direct reportees (Skip Level). However, if you filter your name in the Line Manager field, it will only show the direct employees' learning details who report directly to you.
+
+  utter_faq_filters:
+    - text: You can apply various filters to customize your view. Available filters include [list the filters here]. You can use these filters to refine the information displayed in the dashboard.
+
+  utter_faq_filter_direct_reports:
+    - text: No, we do not show MUDID of employees due to privacy reasons. However, you can filter using the MUDID of the manager using the provided filters.
+
+  utter_faq_export_report:
+    - text: To get the report, navigate to the Detailed View tab, hover over the right corner of the table, just below the % Trainings complete tab, and click on the 3 dots. You should be able to see an option to export the data into an Excel sheet.
+
+  utter_faq_required_date_empty:
+    - text: If the employee has completed the trainings, the Required Date might show as blank. However, if the training is Overdue or Due, you should be able to see the Required Date.
+
+  utter_faq_see_direct_reports:
+    - text: In the given filters, there is a filter for 'Line Manager.' If you use this filter to filter for your name or the manager's name, you will be able to see only the direct reports.
+
+  utter_faq_monitorable_trainings:
+    - text: This dashboard only shows status for the 2 compulsory trainings - ABAC and COC.
+
+  utter_faq_dashboard_live:
+    - text: The dashboard is updated daily. It provides the latest training status as of the most recent update.
+  
+  utter_asking_developer:
+    - text: I have been Developed by CH GEC Analytics Team. I can support you on questions related to Learning Dashboard

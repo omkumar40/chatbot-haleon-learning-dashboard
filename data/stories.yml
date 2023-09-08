@@ -1,0 +1,49 @@
+version: "3.1"
+
+
+stories:
+- story: Greet and ask about the dashboard
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_dashboard_completion
+  - action: utter_faq_dashboard_completion
+
+- story: Thank and ask for more information
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - intent: faq_filters
+  - action: utter_faq_filters
+
+- story: Ask about the difference between managers
+  steps:
+  - intent: faq_difference_managers
+  - action: utter_faq_difference_managers
+
+- story: Ask about exporting a report
+  steps:
+  - intent: faq_export_report
+  - action: utter_faq_export_report
+
+- story: Ask about the Required Date
+  steps:
+  - intent: faq_required_date_empty
+  - action: utter_faq_required_date_empty
+
+- story: Ask about seeing only direct reports
+  steps:
+  - intent: faq_see_direct_reports
+  - action: utter_faq_see_direct_reports
+
+- story: Ask about monitorable trainings
+  steps:
+  - intent: faq_monitorable_trainings
+  - action: utter_faq_monitorable_trainings
+
+- story: Ask if the dashboard is live
+  steps:
+  - intent: faq_dashboard_live
+  - action: utter_faq_dashboard_live
+
+
